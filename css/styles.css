@@ -273,7 +273,7 @@ header {
 }
 @media (max-width: 768px) {
   .fotos-remeras img {
-    width: 48%;
+    width: 45%;
     height: auto;
   }
 }
