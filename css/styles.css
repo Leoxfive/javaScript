@@ -26,33 +26,27 @@ footer {
   justify-content: space-between;
   margin-bottom: 0; /* Elimina el margen inferior que podría estar creando el espacio blanco */
 }
-
 .center {
   text-align: center;
   width: 100%;
 }
-
 .right {
   text-align: center;
   margin-top: 10px;
 }
-
 .left, .center, .right {
   display: inline-block;
   vertical-align: middle;
 }
-
 .center a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
 }
-
 .right p {
   margin: 0;
   font-size: 14px;
 }
-
 @media (max-width: 768px) {
   footer {
     flex-direction: column;
@@ -177,15 +171,35 @@ footer {
 /* fotos */
 .fotos-container {
   display: flex;
-  justify-content: space-between; /* Distribuye las fotos con espacio entre ellas */
+  justify-content: space-between;
 }
-
 .fotos-container img {
-  width: 23%; /* Ajusta el tamaño de las fotos para que quepan en la fila */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 23%;
+  height: auto;
   object-fit: cover;
 }
 .links-to-page {
+  margin: 10px;
   text-decoration-line: none;
+  padding: 10px;
+  color: white;
+  background-color:  black;
+  
+  border-radius: 10px;
 }
-
+.links-to-page:hover {
+  color: gray;
+}
+@media (max-width: 767px) {
+  .fotos-container {
+    flex-wrap: wrap;
+  }
+  .fotos-container img {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+}
+.fondo{
+  background-image: url(../images/buzo_marron.jpeg);
+  object-fit: cover;
+}
