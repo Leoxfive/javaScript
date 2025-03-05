@@ -228,15 +228,14 @@ header {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 40px;
+  padding: 20px;
   font-size: 24px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   text-align: center;
-  max-width: 50%;
+  max-width: 90%;
   box-sizing: border-box;
   word-wrap: break-word;
-  z-index: 2;
 }
 @media (max-width: 768px) {
   .imagen-con-texto {
@@ -258,5 +257,22 @@ header {
     font-size: 14px;
     padding: 10px;
     max-width: 75%;
+  }
+}
+/* Contenedor de las imágenes */
+.fotos-remeras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+}
+.fotos-remeras img {
+  width: 23%;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .fotos-remeras img {
+    width: 48%;
+    height: auto;
   }
 }
