@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Clothes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <h1 class="logo">Mens Clothes</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/remeras.html">Remeras</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/buzos.html">Buzos</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/reserva.html">Reserva</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/sobre_nostoros.html">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<main>
+  <div class="carousel-container">
+     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="./images/buzo_blanco.jpg" class="d-block w-100" alt="Buzo Blanco">
+        <div class="carousel-caption">
+          <h5>Cambia tu estilo</h5>
+          <p>Con nuestros buzos diferenciarte del resto no va a ser problema</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="8000">
+        <img src="./images/buzo_azul.jpeg" class="d-block w-100" alt="Buzo Azul">
+        <div class="carousel-caption">
+          <h5>Texto del Segundo Slide</h5>
+          <p>Este es un ejemplo de texto que aparece en el segundo slide del carrusel.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="./images/buzo_rojo.jpeg" class="d-block w-100" alt="Buzo Rojo">
+        <div class="carousel-caption">
+          <h5>Texto del Tercer Slide</h5>
+          <p>Este es un ejemplo de texto que aparece en el tercer slide del carrusel.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<div>
+  <a class="links-to-page" href="./pages/remeras.html">Remeras</a>
+  <hr>
+  <div class="fotos-container">
+<img src="./images/remera_negra.jpg" alt="Remera negra">
+<img src="./images/remera_escultura.jpg" alt="Remera con estampado">
+<img src="./images/remera_blanca.jpg" alt="Remera blanca">
+<img src="./images/remera_cherry.jpg" alt="Remera con estampado">
+  </div>
+</div>
+</main> 
+<footer>
+    <div class="center">
+        <a href="#">Inicio</a>
+        <a href="./pages/remeras.html">Remeras</a>
+        <a href="./pages/buzos.html">Buzos</a>
+        <a href="./pages/reserva.html">Reserva</a>
+        <a href="./pages/sobre_nostoros.html">Sobre Nosotros</a>
+    </div>
+    <div class="right">
+        <p>© 2025 Todos los derechos reservados.</p>
+    </div>
+</footer>
+<script>
+  var myCarousel = document.getElementById('carouselExample')
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 3000,
+    touch: true
+  })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
