@@ -5,65 +5,7 @@
   box-sizing: border-box;
 }
 
-
-header {
-  background-color: black;
-  color: white;
-}
-.link {
-  padding: 10px;
-}
-
-
-/* Footer */
-footer {
-  padding: 20px;
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column; /* Cambia de fila a columna por defecto */
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0; /* Elimina el margen inferior que podría estar creando el espacio blanco */
-}
-.center {
-  text-align: center;
-  width: 100%;
-}
-.right {
-  text-align: center;
-  margin-top: 10px;
-}
-.left, .center, .right {
-  display: inline-block;
-  vertical-align: middle;
-}
-.center a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-.right p {
-  margin: 0;
-  font-size: 14px;
-}
-@media (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 20px; /* Reducir padding para la versión móvil */
-  }
-
-  .center a {
-    margin: 10px 0;
-  }
-
-  .right p {
-    font-size: 12px;
-    margin-top: 10px;
-  }
-}
-
+/* General de todos los HTML*/ 
 
 /* Navbar */
 .navbar {
@@ -112,6 +54,67 @@ footer {
   .navbar-nav .nav-item .nav-link {
       font-size: 1rem;
   }
+}
+
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.center {
+  text-align: center;
+  width: 100%;
+}
+.right {
+  text-align: center;
+  margin-top: 10px;
+}
+.left, .center, .right {
+  display: inline-block;
+  vertical-align: middle;
+}
+.center a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.right p {
+  margin: 0;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .center a {
+    margin: 10px 0;
+  }
+
+  .right p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+
+/* Pagina: Index */
+
+header {
+  background-color: black;
+  color: white;
+}
+.link {
+  padding: 10px;
 }
 
 
@@ -168,7 +171,7 @@ footer {
 
 
 
-/* fotos */
+/* Fotos */
 .fotos-container {
   display: flex;
   justify-content: space-between;
@@ -202,4 +205,59 @@ footer {
 .fondo{
   background-image: url(../images/buzo_marron.jpeg);
   object-fit: cover;
+}
+
+
+
+/* Pagina: Remeras */ 
+.imagen-con-texto {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 50vh;
+  overflow: hidden;
+}
+.imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  max-width: 90%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .imagen-con-texto {
+    height: auto;
+    min-height: 40vh;
+  }
+  .texto {
+    font-size: 18px;
+    padding: 15px;
+    max-width: 85%;
+  }
+}
+@media (max-width: 480px) {
+  .imagen-con-texto {
+    height: auto;
+    min-height: 30vh;
+  }
+  .texto {
+    font-size: 14px;
+    padding: 10px;
+    max-width: 75%;
+  }
 }
