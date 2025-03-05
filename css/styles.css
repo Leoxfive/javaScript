@@ -259,11 +259,12 @@ header {
     max-width: 75%;
   }
 }
+
 /* Contenedor de las imágenes */
 .fotos-remeras {
   display: flex;
   flex-wrap: wrap;
-  gap: 33px;
+  gap: 10px;
 }
 .fotos-remeras img {
   width: 23%;
