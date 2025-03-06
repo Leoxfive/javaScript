@@ -187,7 +187,6 @@ header {
   padding: 10px;
   color: white;
   background-color:  black;
-  
   border-radius: 10px;
 }
 .links-to-page:hover {
@@ -210,6 +209,14 @@ header {
 
 
 /* Pagina: Remeras */ 
+.names {
+  margin: 10px;
+  text-decoration-line: none;
+  padding: 10px;
+  color: white;
+  background-color:  black;
+  border-radius: 10px;
+}
 .imagen-con-texto {
   position: relative;
   width: 100%;
@@ -276,4 +283,38 @@ header {
     width: 43%;
     height: auto;
   }
+}
+
+
+
+/* Buzos */
+.containerB {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.textoB {
+  flex: 1;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .containerB {
+    flex-direction: column;
+    text-align: center;
+  }
+  .containerB img {
+    width: 100%;
+    height: auto;
+  }
+  .textoB {
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
+
+
+
+/* Reserva*/
+.form{
+  padding: 15px;
 }

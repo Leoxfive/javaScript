@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <h1 class="logo">Mens Clothes</h1>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -25,25 +27,46 @@
       </div>
     </nav>
   </header>
+  <main>
+    <div class="d-flex justify-content-center align-items-center form" style="height: 100%;">
+      <div class="card" style="width: 30rem;">
+        <div class="card-header text-center">
+          Formulario de Reserva
+        </div>
+        <div class="card-body">
+          <form action="#" method="POST">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
   <footer>
     <div class="center">
-        <a href="../index.html">Inicio</a>
-        <a href="./remeras.html">Remeras</a>
-        <a href="./buzos.html">Buzos</a>
-        <a href="#">Reserva</a>
-        <a href="./sobre_nostoros.html">Sobre Nosotros</a>
+      <a href="../index.html">Inicio</a>
+      <a href="./remeras.html">Remeras</a>
+      <a href="./buzos.html">Buzos</a>
+      <a href="#">Reserva</a>
+      <a href="./sobre_nostoros.html">Sobre Nosotros</a>
     </div>
     <div class="right">
-        <p>© 2025 Todos los derechos reservados.</p>
+      <p>© 2025 Todos los derechos reservados.</p>
     </div>
-</footer>
-<script>
-  var myCarousel = document.getElementById('carouselExample')
-  var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 3000, // Intervalo entre slides
-    touch: true      // Habilita el deslizamiento táctil en dispositivos móviles
-  })
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 </html>
