@@ -1,0 +1,17 @@
+@use "./index";
+@use "./remeras";
+@use "./buzos";
+@use "./nav-footer";
+/* Reset de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Reserva */
+  .background_form {
+    background-image: url('../images/background_form.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  }

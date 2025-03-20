@@ -1,0 +1,21 @@
+.containerB {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .textoB {
+        padding: 15px;
+        font-size: 1rem;
+      }
+    }
+  }
+  .textoB {
+    flex: 1;
+    padding: 10px;
+  }

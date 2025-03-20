@@ -1,0 +1,105 @@
+// Variables
+$black: black;
+$white: white;
+$gray: gray;
+$carousel-background: rgba(0, 0, 0, 0.5);
+$carousel-caption-padding: 10px;
+$carousel-caption-font-size-mobile: 1.5rem;
+$carousel-caption-font-size-desktop: 2.5rem;
+$carousel-caption-font-size-default: 1rem;
+$carousel-caption-font-size-default-large: 1.5rem;
+$image-background: url(../images/buzo_marron.jpeg);
+// Estilos Globales
+header {
+  background-color: $black;
+  color: $white;
+}
+.link {
+  padding: 10px;
+}
+// Carousel
+.carousel-item {
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+.carousel-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+// Media Queries
+@media (max-width: 767px) {
+  .carousel-item {
+    img {
+      height: 250px;
+    }
+  }
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    color: $white;
+    z-index: 2;
+    background: $carousel-background;
+    padding: $carousel-caption-padding;
+    h5 {
+      font-size: $carousel-caption-font-size-mobile;
+    }
+    p {
+      font-size: $carousel-caption-font-size-default;
+    }
+  }
+  .fotos-container {
+    flex-wrap: wrap;
+    img {
+      width: 48%;
+      margin-bottom: 10px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .carousel-caption {
+    bottom: 40px;
+    left: 20px;
+    text-align: left;
+    z-index: 2;
+    background: $carousel-background;
+    padding: $carousel-caption-padding;
+    h5 {
+      font-size: $carousel-caption-font-size-desktop;
+    }
+    p {
+      font-size: $carousel-caption-font-size-default-large;
+    }
+  }
+}
+.fotos-container {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 23%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+.links-to-page {
+  margin: 10px;
+  text-decoration-line: none;
+  padding: 10px;
+  color: $white;
+  background-color: $black;
+  border-radius: 10px;
+  &:hover {
+    color: $gray;
+  }
+}
+.fondo {
+  background-image: $image-background;
+  object-fit: cover;
+}
+

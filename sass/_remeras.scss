@@ -1,0 +1,64 @@
+.names {
+    margin: 10px;
+    text-decoration-line: none;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .imagen-con-texto {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    overflow: hidden;
+    @media (max-width: 768px) {
+      min-height: 40vh;
+    }
+    @media (max-width: 480px) {
+      min-height: 30vh;
+    }
+    .imagen {
+      height: 100%;
+      object-fit: cover;
+    }
+    .texto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      max-width: 90%;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      @media (max-width: 768px) {
+        font-size: 18px;
+        padding: 15px;
+        max-width: 85%;
+      }
+      @media (max-width: 480px) {
+        font-size: 14px;
+        padding: 10px;
+        max-width: 75%;
+      }
+    }
+  }
+  .fotos-remeras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    img {
+      width: 23%;
+      height: auto;
+      object-fit: cover;
+      @media (max-width: 768px) {
+        width: 43%;
+      }
+    }
+  }

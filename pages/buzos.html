@@ -6,11 +6,12 @@
     <title>Buzos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <h1 class="logo">Mens Clothes</h1>
+      <h1 class="logo texto-animado">Mens Clothes</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,17 +27,21 @@
     </nav>
   </header>
   <main>
+    <div data-aos="zoom-in">
     <div class="containerB">
       <img class="imagenB" src="../images/buzo_naranja.jpeg" alt="Imagen" width="800">
       <div class="textoB">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident ex possimus saepe veritatis eos, sed amet laudantium ab, assumenda maxime sunt nemo. Quos quis quisquam reiciendis sequi quidem amet!
       </div>
   </div>
+</div>
+<div data-aos="zoom-in">
   <div class="containerB">
     <div class="textoB">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident ex possimus saepe veritatis eos, sed amet laudantium ab, assumenda maxime sunt nemo. Quos quis quisquam reiciendis sequi quidem amet!
   </div>
     <img src="../images/buzo_verde.jpeg" alt="Imagen" width="800">
+</div>
 </div>
     <br>
     <div class="names">
@@ -70,5 +75,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
