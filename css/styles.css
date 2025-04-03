@@ -157,6 +157,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
 }
 .fotos-remeras img {
   width: 23%;
@@ -192,6 +193,10 @@ header {
 .textoB {
   flex: 1;
   padding: 10px;
+}
+
+.fuente {
+  font-family: "Underdog", system-ui;
 }
 
 .navbar {
@@ -272,6 +277,27 @@ footer .right p {
   font-size: 14px;
 }
 
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.footer {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+}
 @media (max-width: 768px) {
   footer {
     flex-direction: column;

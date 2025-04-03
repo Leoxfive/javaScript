@@ -77,6 +77,24 @@
       font-size: 14px;
     }
   }
+  .page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content {
+    flex: 1;
+  }
+  .footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .footer {
+      padding: 15px;
+    }
+  }
   @media (max-width: 768px) {
     footer {
       flex-direction: column;
@@ -102,7 +120,6 @@
     opacity: 1; /* El texto se vuelve completamente visible */
   }
 }
-
 /* Aplica la animación al elemento */
 .texto-animado {
   display: inline-block; /* Asegura que el elemento se mueva de forma fluida */
