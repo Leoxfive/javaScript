@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "Remera negra",
+    "precio": 1200,
+    "imagen": "./images/remera_negra.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Remera con estampado",
+    "precio": 1200,
+    "imagen": "./images/remera_escultura.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Remera blanca",
+    "precio": 1200,
+    "imagen": "./images/remera_blanca.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Remera negra con estampado",
+    "precio": 1200,
+    "imagen": "./images/remera_cherry.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Buzo marron",
+    "precio": 3500,
+    "imagen": "./images/buzo_marron.jpeg"
+  },
+  {
+    "id": 6,
+    "nombre": "Buzo con capucha",
+    "precio": 6000,
+    "imagen": "./images/buzo_capucha.jpeg"
+  },
+  {
+    "id": 7,
+    "nombre": "Buzo multicolor",
+    "precio": 9999,
+    "imagen": "./images/buzo_multicolor.jpeg"
+  },
+  {
+    "id": 8,
+    "nombre": "Buzo marron claro",
+    "precio": 3000,
+    "imagen": "./images/buzo_marroncito.jpeg"
+  },
+  {
+    "id": 9,
+    "nombre": "Conjunto de ropa negro",
+    "precio": 15000,
+    "imagen": "./images/conjunto1.jpeg"
+  },
+  {
+    "id": 10,
+    "nombre": "Conjunto de ropa negro opaco",
+    "precio": 17500,
+    "imagen": "./images/conjunto2.jpeg"
+  },
+  {
+    "id": 11,
+    "nombre": "Conjunto gris",
+    "precio": 19000,
+    "imagen": "./images/conjunto3.jpeg"
+  },
+  {
+    "id": 12,
+    "nombre": "Nike Blancas",
+    "precio": 30000,
+    "imagen": "./images/nike_zapatillas.jpeg"
+  }
+]

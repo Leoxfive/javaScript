@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <title>Mens Clothes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -37,6 +38,7 @@
   <ul id="lista-carrito" style="max-height: 250px; overflow-y: auto; padding-left: 0; list-style: none; margin-bottom: 15px;"></ul>
   <p id="total" style="font-weight: bold; margin-bottom: 15px;">Total: $0</p>
   <button id="vaciar-carrito" style="background-color: #dc3545; border: none; color: white; padding: 8px 14px; border-radius: 6px; cursor: pointer; width: 100%;">Vaciar carrito</button>
+   <button id="finalizar-compra" style="background-color: #28a745; border: none; color: white; padding: 8px 14px; border-radius: 6px; cursor: pointer; width: 100%; margin-top: 10px;">Finalizar compra</button>
 </div>
       </div>
     </nav>
@@ -85,24 +87,7 @@
       <div class="links-to-page">
         <a class="links-to-page" href="./pages/remeras.html">Remeras</a>
         <hr>
-        <div class="galeria fotos-container">
-        <div class="item producto">
-          <img src="./images/remera_negra.jpg" alt="Remera negra">
-          <button class="btn-comprar" data-nombre="Remera negra" data-precio="1200">Comprar</button>
-          </div>
-          <div class="item producto">
-          <img src="./images/remera_escultura.jpg" alt="Remera con estampado">
-          <button class="btn-comprar" data-nombre="Remera con estampado" data-precio="1200">Comprar</button>
-          </div>
-          <div class="item producto">
-          <img src="./images/remera_blanca.jpg" alt="Remera blanca">
-          <button class="btn-comprar" data-nombre="Remera blanca" data-precio="1200">Comprar</button>
-          </div>
-          <div class="item producto">
-          <img src="./images/remera_cherry.jpg" alt="Remera negra con estampado">
-          <button class="btn-comprar" data-nombre="Remera negra con estampado" data-precio="1200">Comprar</button>
-          </div>
-        </div>
+      <div id="contenedor-remeras" class="galeria fotos-container"></div>
       </div>
     </div>
       <br>
@@ -111,24 +96,7 @@
       <div class="links-to-page">
         <a class="links-to-page" href="./pages/buzos.html">Buzos</a>
         <hr>
-        <div class=" galeria fotos-container">
-          <div class="item producto">
-          <img src="./images/buzo_marron.jpeg" alt="Buzo marron">
-          <button class="btn-comprar" data-nombre="Buzo marron" data-precio="3500">Comprar</button>
-          </div>
-          <div class="item producto">
-          <img src="./images/buzo_capucha.jpeg" alt="Buzo con capucha">
-          <button class="btn-comprar" data-nombre="Buzo con capucha" data-precio="6000">Comprar</button>
-          </div>
-          <div class="item producto">
-          <img src="./images/buzo_multicolor.jpeg" alt="Buzo multicolor">
-          <button class="btn-comprar" data-nombre="Buzo multicolor" data-precio="9999">Comprar</button>
-          </div>
-          <div class="item producto">
-          <img src="./images/buzo_marroncito.jpeg" alt="Buzo marron claro">
-          <button class="btn-comprar" data-nombre="Buzo marron claro" data-precio="3000">Comprar</button>
-          </div>
-        </div>
+      <div id="contenedor-buzos" class="galeria fotos-container"></div>
       </div>
     </div>
       <br>
@@ -137,24 +105,7 @@
       <div class="links-to-page">
         <a class="links-to-page" href="./pages/reserva.html">Reserva</a>
         <hr>
-        <div class="galeria fotos-container">
-           <div class="item producto">
-          <img src="./images/conjunto1.jpeg" alt="Conjunto de ropa negro">
-          <button class="btn-comprar" data-nombre="Conjunto de ropa negro" data-precio="15000">Comprar</button>
-          </div>
-           <div class="item producto">
-          <img src="./images/conjunto2.jpeg" alt="Conjunto de ropa negro opcion 2">
-          <button class="btn-comprar" data-nombre="Conjunto de ropa negro opaco" data-precio="17500">Comprar</button>
-          </div>
-           <div class="item producto">
-          <img src="./images/conjunto3.jpeg" alt="Conjunto de ropa color gris">
-          <button class="btn-comprar" data-nombre="Conjunto gris" data-precio="19000">Comprar</button>
-          </div>
-           <div class="item producto">
-          <img src="./images/nike_zapatillas.jpeg" alt="Zapatillas blancas">
-          <button class="btn-comprar" data-nombre="Nike Blancas" data-precio="30000">Comprar</button>
-          </div>
-        </div>
+        <div id="contenedor-reserva" class="galeria fotos-container"></div>
       </div>
     </div>
       <br>
